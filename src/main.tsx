@@ -1,24 +1,33 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import "./index.css";
 
 function App() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "#050505",
-        color: "#FFD700",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "Arial, sans-serif",
-        textAlign: "center",
-      }}
-    >
-      <div>
-        <h1>ZONERUSH</h1>
-        <p>Find your zone • Own the rush</p>
-      </div>
+    <main className="app">
+      <div className="glow" />
+
+      <section className="hero">
+        <div className="logo">ZONE<span>RUSH</span></div>
+
+        <div className="live">
+          <span /> LIVE COMMUNITY
+        </div>
+
+        <h1>
+          Find your zone
+          <br />
+          <span>Own the rush</span>
+        </h1>
+
+        <p>
+          Enter the ultimate esports community.
+          <br />
+          Compete • Earn • Connect
+        </p>
+
+        <button>ENTER ZONERUSH</button>
+      </section>
     </main>
   );
 }
